@@ -1,0 +1,16 @@
+<!-- @foreach ($listItems as $item) 
+            <div style="display:flex; margin-bottom:5px;">
+                <p style="width:200px;">Items: {{ $item->name }}</p>
+                <form method="post" action=" {{ route('markComplete', $item->id) }}">
+                    {{csrf_field()}}
+                    <button type="submit" style="height:50px;">Mark complete</button>
+                </form>
+            </div>
+        @endforeach -->
+
+        <!-- <form method="post" action="{{ route('saveItem') }}">
+            {{csrf_field()}}
+            <label for="item">Enter a todo item:</label>
+            <input type="text" name="item" id="item">
+            <button>Submit</button>
+        </form> -->
